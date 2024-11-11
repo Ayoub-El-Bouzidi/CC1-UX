@@ -1,0 +1,27 @@
+@startuml
+class Formateur {
+    +name: String
+    +email: String
+    -password: String
+    +addFormation()
+    +updateFormation()
+    +deleteFormation()
+}
+
+class Apprenant {
+    +name: String
+    +email: String
+    -password: String
+    +viewFormation()
+    +viewFormationLink()
+}
+
+class Formation {
+    +title: String
+    +description: String
+    +link: URL
+}
+
+Formateur "1" -- "many" Formation : adds >
+Apprenant "many" -- "many" Formation : views >
+@enduml
