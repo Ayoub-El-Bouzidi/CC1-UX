@@ -1,3 +1,6 @@
 [submodule "Tuto1"]
 	path = Tuto1
 	url = https://github.com/Ayoub-El-Bouzidi/CC1-UX.git
+[submodule "CC1-UX"]
+	path = CC1-UX
+	url = https://github.com/dinadehbi/CC1-UX.git
