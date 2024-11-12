@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor Formateur
+actor Apprenant
+
+usecase "Add Formation" as UC_AddFormation
+usecase "Update Formation" as UC_UpdateFormation
+usecase "Delete Formation" as UC_DeleteFormation
+usecase "View Formation List" as UC_ViewList
+usecase "View Formation Details" as UC_ViewDetails
+
+Formateur -- UC_AddFormation
+Formateur -- UC_UpdateFormation
+Formateur -- UC_DeleteFormation
+Formateur -- UC_ViewList
+Apprenant -- UC_ViewList
+Apprenant -- UC_ViewDetails
+@enduml
